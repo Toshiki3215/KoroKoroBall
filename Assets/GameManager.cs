@@ -21,9 +21,10 @@ public class GameManager : MonoBehaviour
     private int coinCount;
     private void Start()
     {
+        Screen.SetResolution(1920,1080,false);
+        Application.targetFrameRate = 60;
         coinCount = 0;
     }
-
     public void AddCoinCount()
     {
         coinCount= coinCount+1;
